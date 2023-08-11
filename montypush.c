@@ -10,7 +10,7 @@
 
 void push(stack_t **stack, unsigned int line_num, int n)
 {
-        stack_t *new, *j = *stack;
+        stack_t *new, *h = *stack;
 
         if (stack == NULL)
         {
@@ -24,6 +24,6 @@ void push(stack_t **stack, unsigned int line_num, int n)
         new->n = n;
         new->next = *stack;
 	if (*stack)
-                j->prev = new;
+                h->prev = new;
         *stack = new;
 }
