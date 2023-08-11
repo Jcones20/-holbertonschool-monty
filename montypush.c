@@ -9,9 +9,13 @@
  */
 int main(int argc, char *argv[])
 {
+	if (argc < 2)
+	{
+		fprintf(stderr, "Usage: %s <input_file>\n", argv[0]);
+		return 1;
+	}
 	return 0;
 }
-
 /**
  * push - Pushes an element to the stack
  * @stack: pointer to head of stack
