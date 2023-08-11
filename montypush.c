@@ -10,11 +10,13 @@
 
 void push(stack_t **stack, unsigned int line_number)
 {
+	int n;
+
         stack_t *new, *j = *stack;
 
         if (stack == NULL)
         {
-                fprintf(stderr, "L%d: usage: push integer", line_num);
+                fprintf(stderr, "L%d: usage: push integer", line_number);
                 exit(EXIT_FAILURE);
         }
         new = malloc(sizeof(stack_t));
