@@ -7,8 +7,9 @@
  *
  *
  */
-int main(int n, char *argv[])
+int main(int argc, char *argv[])
 {
+	return 0;
 }
 
 /**
@@ -18,7 +19,7 @@ int main(int n, char *argv[])
  * @n: variable
  * Return: address of new element
  */
-int
+
 void push(stack_t **stack, unsigned int line_number)
 {
 	int n;
