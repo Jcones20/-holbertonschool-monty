@@ -8,9 +8,9 @@
  * Return: address of new element
  */
 
-void push(stack_t **stack, unsigned int line_num, int n)
+void push(stack_t **stack, unsigned int line_number, int n)
 {
-        stack_t *new, *h = *stack;
+        stack_t *new, *j = *stack;
 
         if (stack == NULL)
         {
@@ -24,6 +24,6 @@ void push(stack_t **stack, unsigned int line_num, int n)
         new->n = n;
         new->next = *stack;
 	if (*stack)
-                h->prev = new;
+                j->prev = new;
         *stack = new;
 }
