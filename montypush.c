@@ -10,7 +10,7 @@
 
 void push(stack_t **stack, unsigned int line_number)
 {
-	int n = 42;
+	int n;
 
         stack_t *new, *j = *stack;
 
