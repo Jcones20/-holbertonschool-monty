@@ -8,7 +8,7 @@
  * Return: address of new element
  */
 
-void push(stack_t **stack, unsigned int line_number, int n)
+void push(stack_t **stack, unsigned int line_number)
 {
         stack_t *new, *j = *stack;
 
