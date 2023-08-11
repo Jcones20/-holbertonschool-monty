@@ -27,7 +27,7 @@ void pall(stack_t **stack, unsigned int line_num)
  * Return: address of new element
  */
 
-void push(stack_t **stack, unsigned int line_num, int n)
+void push(stack_t **stack, unsigned int line_numer, int n)
 {
 	stack_t *new, *h = *stack;
 
