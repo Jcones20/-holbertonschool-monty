@@ -1,13 +1,24 @@
 #include "monty.h"
 
 /**
+ * main - intilize n 
+ *
+ *
+ *
+ *
+ */
+int main(int argc, char *argv[])
+{
+}
+
+/**
  * push - Pushes an element to the stack
  * @stack: pointer to head of stack
  * @line_num: file's line number
  * @n: variable
  * Return: address of new element
  */
-
+int
 void push(stack_t **stack, unsigned int line_number)
 {
 	int n;
@@ -23,7 +34,7 @@ void push(stack_t **stack, unsigned int line_number)
         if (new == NULL)
                 exit(EXIT_FAILURE);
         new->prev = NULL;
-        new->n = n;
+        new->n = 2;
         new->next = *stack;
 	if (*stack)
                 j->prev = new;
