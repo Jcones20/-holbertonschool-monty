@@ -45,6 +45,9 @@ typedef struct instruction_s
 } instruction_t;
 
 
+void verify_args(int argc);
+void open_and_read(const char *filename);
+void clean(void);
 
 /*basic functions related to doubly linked list*/
 stack_t *add_node(stack_t **head, const int n);
@@ -61,7 +64,7 @@ void pint(stack_t **h, unsigned int l);
 
 /*in push_and_pop*/
 void pop(stack_t **h, unsigned int l);
-int push (stack_t **h, char *line, unsigned int l);
+void push(stack_t **stack, unsigned int line_numer, int n);
 
 /*in move_elements_functions*/
 void swap(stack_t **h, unsigned int l);

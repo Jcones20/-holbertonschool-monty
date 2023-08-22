@@ -27,13 +27,13 @@ void pall(stack_t **stack, unsigned int line_num)
  * Return: address of new element
  */
 
-int push(stack_t **stack, unsigned int line_numer, int n)
+void push(stack_t **stack, unsigned int line_numer, int n)
 {
 	stack_t *new, *h = *stack;
 
 	if (stack == NULL)
 	{
-		fprintf(stderr, "L%d: usage: push integer", line_num);
+		fprintf(stderr, "L%d: usage: push integer", line_numer);
 		exit(EXIT_FAILURE);
 	}
 	new = malloc(sizeof(stack_t));
